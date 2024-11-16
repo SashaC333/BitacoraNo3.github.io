@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imgs/pagina/Logo.png" alt="Imagen del logo">
+        </header>
+        <nav>
+            <a href="index.html">Forms</a>
+            <a href="index-Tablas.html">Tablas</a>
+            <a id="activo" href="index-Especificidad.html">Especificidad</a>
+            <a href="index-AfterBefore.html">After y Before</a>
+            <a href="index-Color.html">Color</a>
+            <a href="index-Header.html">Header</a>
+            <a href="index-Footer.html">Footer</a>
+        </nav>
+        <section>
+            
+            <div class="titulo">
+                <h1>Especificidad.</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales:</h2>
+                <div class="texto1">
+                    <ol>
+                        <li><b>Elementos inline</b> (Especificidad: <b>1000</b>)</li>
+                        <li><b>Selectores de ID</b> (Especificidad: <b>0100</b>)</li>
+                        <li><b>Selectores de clase, atributos y pseudoclases</b> (Especificidad: <b>0010</b>)
+                            <ul>
+                                <li><b>Clases</b> (<b>.Clase</b>)</li>
+                                <li><b>Atributos</b> (<b>[type="text"]</b>)</li>
+                                <li><b>Pseudoclases</b> (<b>:hover</b>, <b>:nth-child</b>)</li>
+                            </ul>
+                        </li>
+                        <li><b>Selectores de elementos y pseudoelementos</b> (Especificidad: <b>0001</b>)
+                            <ul>
+                                <li><b>Elementos HTML</b> (<b>div</b>, <b>p</b>, <b>h1</b>)</li>
+                                <li><b>Pseudoelementos</b> (<b>::before</b>, <b>::after</b>)</li>
+                            </ul>
+                        </li>
+                        <li><b>Universal, combinadores y no especificados</b> (Especificidad: <b>0000</b>)
+                            <ul>
+                                <li><b>Selector universal</b> (<b>*</b>)</li>
+                                <li><b>Combinadores</b> (<b>&gt;</b>, <b>+</b>, <b>~</b>)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <p><b>Reglas adicionales</b></p>
+                    <ul>
+                        <li><b>último definido</b></li>
+                        <li><b>!important</b></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes de clase:</h2>
+                <div class="texto2">
+                    <p><b>Especificidad:</b> Es el medio por el cual los navegadores deciden que valores de CSS son más relevantes para aplicar.</p>
+                    <p><b>Jerarquía de Especificidad en CSS:</b></p>
+                    <ol>
+                        <li>
+                            <b>Elementos inline</b> (Especificidad: <b>1000</b>)
+                            <ul>
+                                <li>Son los estilos definidos directamente en el atributo <b>style</b> de un elemento.</li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Selectores de ID</b> (Especificidad: <b>0100</b>)
+                            <ul>
+                                <li>Usan el atributo <b>id</b> del elemento.</li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Selectores de clase, atributos y pseudoclases</b> (Especificidad: <b>0010</b>)
+                            <ul>
+                                <li>Incluyen:
+                                    <ul>
+                                        <li>Clases (<b>.Clase</b>)</li>
+                                        <li>Atributos (<b>[type="text"]</b>)</li>
+                                        <li>Pseudoclases (<b>:hover</b>, <b>:nth-child</b>)</li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Selectores de elementos y pseudoelementos</b> (Especificidad: <b>0001</b>)
+                            <ul>
+                                <li>Incluyen:
+                                    <ul>
+                                        <li>Elementos HTML (<b>div</b>, <b>p</b>, <b>h1</b>)</li>
+                                        <li>Pseudoelementos (<b>::before</b>, <b>::after</b>)</li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Universal, combinadores y no especificados</b> (Especificidad: <b>0000</b>)
+                            <ul>
+                                <li>Incluyen:
+                                    <ul>
+                                        <li>Selector universal (<b>*</b>)</li>
+                                        <li>Combinadores (<b>&gt;</b>, <b>+</b>, <b>~</b>)</li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <p><b>Reglas adicionales</b></p>
+                    <ul>
+                        <li>Si dos estilos tienen la misma especificidad, el <b>último definido</b> en el código tendrá prioridad.</li>
+                        <li>El uso de <b>!important</b> anula todas las reglas de especificidad.</li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imgs/contenido/especificidad.png" alt="Especificidad">
+                </div>
+            </div>
+
+            <div class="abajo">
+                <h2>Resumen de la clase:</h2>
+                <div class="texto3">
+                    <p><b>Especificidad</b> en CSS determina qué reglas de estilo se aplican cuando hay conflictos. Los estilos inline
+                        tienen la mayor especificidad (1000), seguidos por los selectores de ID (0100), clases, atributos y pseudoclases
+                        (0010), elementos y pseudoelementos (0001), y los selectores universales y combinadores (0000). Si dos reglas tienen
+                        la misma especificidad, la última definida tendrá prioridad, y el uso de <b>!important</b> anula todas las reglas de
+                        especificidad.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <img src="imgs/pagina/Logo.png" alt="Logo">
+        </footer>
+    </main>
+</body>
+</html>

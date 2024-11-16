@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imgs/pagina/Logo.png" alt="Imagen del logo">
+        </header>
+        <nav>
+            <a id="activo" href="index.html">Forms</a>
+            <a href="index-Tablas.html">Tablas</a>
+            <a href="index-Especificidad.html">Especificidad</a>
+            <a href="index-AfterBefore.html">After y Before</a>
+            <a href="index-Color.html">Color</a>
+            <a href="index-Header.html">Header</a>
+            <a href="index-Footer.html">Footer</a>
+        </nav>
+        <section>
+            
+            <div class="titulo">
+                <h1>Formularios.</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales:</h2>
+                <div class="texto1">
+                    <p><b>Etiquetas principales:</b></p>
+                    <ul>
+                        <li><b>&lt;form&gt;</b></li>
+                        <li><b>&lt;input&gt;</b></li>
+                        <li><b>&lt;label&gt;</b></li>
+                        <li><b>&lt;textarea&gt;</b></li>
+                        <li><b>&lt;button&gt;</b></li>
+                        <li><b>&lt;select&gt;</b></li>
+                    </ul>
+                    
+                    <p><b>Tipos de &lt;input&gt;</b></p>
+                    <ul>
+                        <li><b>text</b></li>
+                        <li><b>password</b></li>
+                        <li><b>email</b></li>
+                        <li><b>number</b></li>
+                        <li><b>date</b></li>
+                        <li><b>time</b></li>
+                        <li><b>file</b></li>
+                        <li><b>checkbox</b></li>
+                        <li><b>radio</b></li>
+                        <li><b>submit</b></li>
+                        <li><b>reset</b></li>
+                        <li><b>range</b></li>
+                        <li><b>color</b></li>
+                        <li><b>tel</b></li>
+                        <li><b>url</b></li>
+                        <li><b>search</b></li>
+                    </ul>
+                    
+                    <p><b>Atributos:</b></p>
+                    <ul>
+                        <li><b>action</b></li>
+                        <li><b>method</b></li>
+                        <li><b>name</b></li>
+                        <li><b>id</b></li>
+                        <li><b>value</b></li>
+                        <li><b>placeholder</b></li>
+                        <li><b>required</b></li>
+                        <li><b>readonly</b></li>
+                        <li><b>disabled</b></li>
+                        <li><b>maxlength</b></li>
+                        <li><b>cols</b> y <b>rows</b></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes de clase:</h2>
+                <div class="texto2">
+                    <ul>
+                        <li><b>&lt;form&gt;</b>: Contenedor principal del formulario.</li>
+                        <li><b>&lt;input&gt;</b>: Campo de entrada de datos, y usa <b>type</b>.</li>
+                        <li><b>&lt;label&gt;</b>: Proporciona una descripción para los campos, mejorando la accesibilidad.</li>
+                        <li><b>&lt;textarea&gt;</b>: Área de texto para introducir varias líneas de contenido.</li>
+                        <li><b>&lt;button&gt;</b>: Botón personalizable para realizar acciones en el formulario.</li>
+                        <li><b>&lt;select&gt;</b>: Menú desplegable para seleccionar opciones.</li>
+                        
+                    </ul>
+                    
+                    <p><b>Tipos de &lt;input&gt;</b></p>
+                    <ul>
+                        <li><b>text</b>: Entrada de texto .</li>
+                        <li><b>password</b>: Entrada para contraseñas.</li>
+                        <li><b>email</b>: Entrada para direcciones de correo electrónico.</li>
+                        <li><b>number</b>: Entrada para números.</li>
+                        <li><b>date</b>: Entrada para seleccionar una fecha.</li>
+                        <li><b>time</b>: Entrada para seleccionar una hora.</li>
+                        <li><b>file</b>: Subida de archivos.</li>
+                        <li><b>checkbox</b>: Opción de selección múltiple.</li>
+                        <li><b>radio</b>: Selección única entre varias opciones.</li>
+                        <li><b>submit</b>: Botón para enviar el formulario.</li>
+                        <li><b>reset</b>: Botón para reiniciar los campos.</li>
+                        <li><b>range</b>: Selector deslizante para valores en un rango.</li>
+                        <li><b>color</b>: Selector de color.</li>
+                        <li><b>tel</b>: Entrada para números de teléfono.</li>
+                        <li><b>url</b>: Entrada para URLs.</li>
+                        <li><b>search</b>: Campo de búsqueda.</li>
+                    </ul>
+                    
+                    <p><b>Atributos: </b></p>
+                    <ul>
+                        <li><b>action</b>: URL a la que se envían los datos del formulario.</li>
+                        <li><b>method</b>: Método de envío (<b>GET</b> o <b>POST</b>).</li>
+                        <li><b>name</b>: Nombre único para identificar el campo.</li>
+                        <li><b>id</b>: Identificador único del campo.</li>
+                        <li><b>value</b>: Valor inicial del campo.</li>
+                        <li><b>placeholder</b>: Texto de ayuda dentro del campo.</li>
+                        <li><b>required</b>: Hace obligatorio un campo.</li>
+                        <li><b>readonly</b>: Campo de solo lectura.</li>
+                        <li><b>disabled</b>: Desactiva el campo.</li>
+                        <li><b>maxlength</b>: Número máximo de caracteres permitidos.</li>
+                        <li><b>cols</b> y <b>rows</b>: Limita el número de caracteres por columnas y renglones.</li>
+                
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="imgs/contenido/forms.png" alt="Formularios">
+                </div>
+            </div>
+
+            <div class="abajo">
+                <h2>Resumen de la clase:</h2>
+                <div class="texto3">
+                    <p>El <b>&lt;form&gt;</b> es el contenedor principal de un formulario, y dentro de él se usan diversos elementos como
+                        <b>&lt;input&gt;</b> (para distintos tipos de entrada), <b>&lt;label&gt;</b> (para describir los campos),
+                        <b>&lt;textarea&gt;</b> (para áreas de texto), <b>&lt;button&gt;</b> (para botones), y <b>&lt;select&gt;</b> (para
+                        menús desplegables). Los tipos de <b>&lt;input&gt;</b> incluyen opciones como <b>text</b>, <b>password</b>,
+                        <b>email</b>, <b>checkbox</b>, <b>radio</b>, <b>submit</b>, entre otros, que deciden la conducta del campo.</p>
+                    <p>Y los atributos importantes de los formularios son <b>action</b> (URL de destino), <b>method</b> (GET o POST),
+                        <b>name</b>, <b>id</b>, <b>value</b>, <b>placeholder</b>, <b>required</b>, <b>readonly</b>, <b>disabled</b>, y
+                        <b>maxlength</b>, que controlan la interacción y validación de los datos.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <img src="imgs/pagina/Logo.png" alt="Logo">
+        </footer>
+    </main>
+</body>
+</html>
